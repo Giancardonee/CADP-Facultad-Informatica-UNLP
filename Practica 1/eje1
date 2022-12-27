@@ -1,0 +1,14 @@
+program eje1prac1; 
+
+var
+num: integer ; 
+begin
+	write('Ingrese un numero:') ; 
+		readln (num); 
+			while num <> 1 do 
+				begin
+							write('Ingrese un numero:') ; 
+									readln (num); 
+				end; 
+	
+end.
