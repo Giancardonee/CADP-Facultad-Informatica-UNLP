@@ -13,7 +13,7 @@ d. Eliminar la información de las computadoras con código entre 0 y 500.}
 program eje1ADD ; 
 
 const
-	DimF = 5 ; 
+	DimF = 10000 ; 
 
 type 
 	computadora = record
@@ -194,6 +194,8 @@ begin
 		
 	
 	procedure informar (v: vector1; DimL: integer); 
+	var
+	i: integer; 
 	begin
 	writeln ; 
 		writeln  ('- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ');		
@@ -204,8 +206,9 @@ begin
 			writeln ;
 			  	
 			ordenarVector(v,DimL); 
+			for i:= 1 to DimL do 
 			eliminar_datos (v,DimL); 
-			eliminar_datos (v,DimL); 
+			
 	   		MostrarVectorUbuntu (v,DimL); 
 	
 	end;
