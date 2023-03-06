@@ -5,7 +5,7 @@ lo sumo 400 alumnos. La lectura finaliza cuando se ingresa el DNI -1 (que no deb
 program eje8prac4; 
 
 const
-	DimF = 5; 
+	DimF = 400; 
 
 type 
 		Alumno = record 
